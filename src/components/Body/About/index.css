@@ -1,0 +1,20 @@
+.about {
+  width: 1890px;
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-about {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.text-about {
+  width: 800px;
+  margin: 0 auto;
+
+  text-align: center;
+  font-size: 20px;
+  color: #92A0B8;
+}

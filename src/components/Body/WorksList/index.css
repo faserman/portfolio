@@ -1,0 +1,11 @@
+.works-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 157px);
+  justify-content: center;
+  grid-template-rows: 420px;
+  column-gap: 50px;
+  margin: 30px auto;
+  padding-top: 30px;;
+
+  background-color: #DDE3E9;
+}

@@ -1,0 +1,30 @@
+.work-drawer {
+  display: grid;
+  grid-template-rows: 600px;
+  grid-template-columns: 800px 450px;
+
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.screenshots {
+  display: grid;
+  grid-template-rows: 600px;
+  grid-template-columns: repeat(auto-fit, 240px);
+  
+  justify-content: space-around;
+}
+
+.full-description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  margin-top: -5px;
+  font-size: 35px;
+}
+
+.description {
+  font-size: 20px;
+  color: #92A0B8;
+}

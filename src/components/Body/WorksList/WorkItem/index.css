@@ -1,0 +1,35 @@
+.work-item {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 165px;
+  grid-template-rows: repeat(2, auto);
+  height: 400px;
+  cursor: pointer;
+
+  transition: box-shadow .2s linear;
+}
+
+.work-item:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.img-work-item {
+  width: 157px;
+  height: 340px;
+  margin: 0 auto;
+}
+
+.name-work {
+  font-size: 20px;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  transition: color .2s linear;
+}
+
+.name-work:hover {
+  color: #92A0B8;
+}
+
