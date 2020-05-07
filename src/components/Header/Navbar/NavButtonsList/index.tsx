@@ -5,7 +5,6 @@ import './index.css';
 export const NavButtonsList = observer((props: any) => {
   return(
     <div className="nav">
-      <a className="nav-text" href="">Главная</a>
       <a className="nav-text" href="">Об авторе</a>
       <a className="nav-text" href="">Работы</a>
       <a className="nav-text" href="">Контакты</a>

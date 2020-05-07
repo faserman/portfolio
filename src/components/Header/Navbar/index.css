@@ -1,10 +1,10 @@
 .navbar {
   display: grid;
-  margin-top: 35px;
-  width: 1890px;
-  grid-template-rows: 60px;
-  grid-template-columns: 96px 610px;
+  grid-template-rows: max-content;
+  grid-template-columns: 96px 35vw;
   justify-content: space-around;
+
+  padding-top: 15px;
 }
 
 .logo {

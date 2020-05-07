@@ -1,16 +1,24 @@
 .nav {
   display: grid;
-  grid-template-rows: 27;
-  grid-template-columns: repeat(4, auto);
-  justify-content: space-between;
+  --gap: 15px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      min(
+        (19rem - 100%) * 999,
+        100%),
+      1fr
+    )
+  );
+  gap: var(--gap);
+  justify-content: space-around;
+
   align-content: center;
 }
 
 .nav-text {
-  display: inline-block;
   position: relative;
-  vertical-align: top;
-  margin: 0 30px;
+  place-self: center;
 
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;

@@ -1,6 +1,9 @@
 .header {
-  width: 1890px;
-  height: 640px;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(2, max-content);
 
-  background-image: url('/imgs/header/short_desc_img.png');
+  background-image: url('../../imgs/jesus-kiteque-wn-KYaHwcis-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 }
