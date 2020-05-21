@@ -19,6 +19,42 @@ class Utils {
       screenshots: ['/imgs/works/fibonacciAppRn/fibonacciApp_1.jpg', '/imgs/works/fibonacciAppRn/fibonacciApp_2.jpg', '/imgs/works/fibonacciAppRn/fibonacciApp_3.jpg']
     },
   ]
+  getUrlTools(toolName: string) {
+    let urlTool: string = "";
+    switch (toolName) {
+      case "JavaScript":
+          urlTool = "https://ru.wikipedia.org/wiki/JavaScript";
+        break;
+      case "TypeScript":
+          urlTool = "https://www.typescriptlang.org/";
+        break;
+      case "React":
+          urlTool = "https://ru.reactjs.org/";
+        break;
+      case "React Native":
+          urlTool = "https://reactnative.dev/";
+        break;
+      case "Expo":
+          urlTool = "https://expo.io/";
+        break;
+      case "Mobx":
+          urlTool = "https://mobx.js.org/README.html";
+        break;
+      case "Redux":
+          urlTool = "https://redux.js.org/";
+        break;
+      case "CSS3":
+          urlTool = "https://www.w3.org/Style/CSS/";
+        break;
+      case "HTML5":
+          urlTool = "https://html.spec.whatwg.org/multipage/";
+        break;
+      default: urlTool = "#";
+    }
+    return urlTool
+  }
+
+  
 }
 
 export const utils = new Utils();

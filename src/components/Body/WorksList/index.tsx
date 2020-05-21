@@ -13,7 +13,10 @@ export const WorksList = observer((props: any) => {
 
   return(
     <div className="works-list">
+      <div className="works-list-title">Примеры работ</div>
+      <div className="works-list-items">
       { workItems }
+      </div>
     </div>
   );
 })

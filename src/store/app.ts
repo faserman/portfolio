@@ -5,7 +5,7 @@ import { utils } from '../utils/index'
 class AppStore {
   @observable works: Work[] = [];
   @observable idWork: string = '';
-  @observable workDrawerOpen: boolean = false;
+  @observable workDrawerIsOpen: boolean = false;
 
   @action
   setWorks(result: Work[]) {
@@ -18,10 +18,16 @@ class AppStore {
   };
 
   @action
-  setModeWorkDrawer(id: string) {
+  openWorkDrawer(id: string) {
     if (this.idWork === id) {
-      this.workDrawerOpen = !this.workDrawerOpen;
+      this.workDrawerIsOpen = true;
     } 
+  };
+
+  @action.bound
+  closeWorkDrawer() {
+    this.workDrawerIsOpen = false;
+    this.clearIdWork();
   };
 
   @action
@@ -37,14 +43,14 @@ class AppStore {
     } catch(error) {
       console.log(error);
     }
-  }
+  };
 
   @action.bound
   toggleWorkDrawer = (id: string) => {
     this.clearIdWork()
     this.setIdWork(id);
-    this.setModeWorkDrawer(id);
-  }
-}
+    this.openWorkDrawer(id);
+  };
+};
 
 export const appStore = new AppStore();

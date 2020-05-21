@@ -8,12 +8,12 @@ import { WorkDrawer } from './WorkDrawer';
 
 export const Body =observer((props: any) => {
   
-  const { workDrawerOpen } = appStore;
+  const { workDrawerIsOpen } = appStore;
   
   return(
     <div className="body">
       <WorksList />
-      { workDrawerOpen ? <WorkDrawer /> : null }
+      { workDrawerIsOpen ? <WorkDrawer /> : null }
     </div>
   )
 })
