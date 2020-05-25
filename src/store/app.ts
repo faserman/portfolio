@@ -1,11 +1,15 @@
 import { observable, action } from 'mobx';
-import { Work } from '../models/app'
+import { Work, Contacts } from '../models/app'
 import { utils } from '../utils/index'
 
 class AppStore {
   @observable works: Work[] = [];
+  @observable contacts: Contacts[] = [];
   @observable idWork: string = '';
   @observable workDrawerIsOpen: boolean = false;
+  @observable scroll: number = 0;
+  @observable screenWidth: number = 1900;
+  @observable navMenuToggle: boolean = false;
 
   @action
   setWorks(result: Work[]) {
@@ -15,6 +19,26 @@ class AppStore {
   @action
   setIdWork(id: string) {
     this.idWork = id;
+  };
+
+  @action
+  setContacts(result: Contacts[]) {
+    this.contacts = result;
+  };
+
+  @action
+  setScroll(result: number) {
+    this.scroll = result;
+  };
+
+  @action
+  setScreenWidth(result: number) {
+    this.screenWidth = result;
+  };
+
+  @action.bound
+  openBtnsMenu() {
+    this.navMenuToggle = !this.navMenuToggle;
   };
 
   @action
@@ -40,6 +64,16 @@ class AppStore {
     try {
       const result = utils.works;
       this.setWorks(result)
+    } catch(error) {
+      console.log(error);
+    }
+  };
+
+  @action.bound
+  gettingContacts() {
+    try {
+      const result = utils.contacts;
+      this.setContacts(result);
     } catch(error) {
       console.log(error);
     }

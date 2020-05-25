@@ -3,8 +3,6 @@
   grid-template-rows: max-content;
   grid-template-columns: 96px 35vw;
   justify-content: space-around;
-
-  padding-top: 15px;
 }
 
 .logo {

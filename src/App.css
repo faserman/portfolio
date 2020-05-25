@@ -1,3 +1,5 @@
 .App {
   display: grid;
+
+  background: linear-gradient(to-top, #E8EBF0, #9CABBE)
 }

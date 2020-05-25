@@ -1,0 +1,32 @@
+.footer {
+  display: grid;
+  justify-content: center;
+  align-content: flex-end;
+  background-color: #2A2A2A;
+  height: 150px;
+}
+
+.copyright {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  row-gap: 15px;
+  padding-bottom: 5px;
+}
+
+.copyright-logo {
+  display: grid;
+  font-family: Revalia;
+  font-size: 58px;
+  line-height: 60px;
+  margin: 0;
+  color: #DDE3E9;
+
+  place-self: center;
+}
+
+.copyright-span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #DDE3E9;
+}

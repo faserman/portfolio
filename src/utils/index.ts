@@ -1,4 +1,4 @@
-import { Work } from '../models/app';
+import { Work, Contacts } from '../models/app';
 
 class Utils {
   works: Work[] = [
@@ -18,6 +18,24 @@ class Utils {
       srcIcon: '/imgs/works/fibonacciAppRn/icon.png',
       screenshots: ['/imgs/works/fibonacciAppRn/fibonacciApp_1.jpg', '/imgs/works/fibonacciAppRn/fibonacciApp_2.jpg', '/imgs/works/fibonacciAppRn/fibonacciApp_3.jpg']
     },
+  ]
+  contacts: Contacts[] = [
+    {
+      title: 'Github',
+      url: 'https://github.com/faserman'
+    },
+    {
+      title: 'Gmail',
+      url: 'sornikyr@gmail.com'
+    },
+    {
+      title: 'tumblr',
+      url: 'https://www.tumblr.com/blog/sorokinnikolay'
+    },
+    {
+      title: 'Telegram',
+      url: '@faserman'
+    }
   ]
   getUrlTools(toolName: string) {
     let urlTool: string = "";

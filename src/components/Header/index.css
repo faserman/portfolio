@@ -1,9 +1,33 @@
 .header {
   display: grid;
-  height: 100vh;
-  grid-template-rows: repeat(2, max-content);
+  align-content: center;
+  position: sticky;
+  top: 0;
+  height: 100px;
 
-  background-image: url('../../imgs/jesus-kiteque-wn-KYaHwcis-unsplash.jpg');
-  background-size: cover;
-  background-position: center;
+  transition: background-color 0.6s, height .6s;
 }
+
+.header-scroll-reaction {
+  background-color: rgba(221, 227, 233, .8);
+  height: 60px;
+}
+
+@media only screen and (max-width: 880px) {
+  .header {
+    background-color: #DDE3E9;
+    border-bottom: 1px solid #2A2A2A;
+  }
+}
+
+
+
+/*  
+
+#E8EBF0
+#9CABBE
+
+
+
+
+  */

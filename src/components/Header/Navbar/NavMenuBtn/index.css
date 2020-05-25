@@ -1,0 +1,44 @@
+.nav-btn-menu {
+  display: grid;
+  justify-self: end;
+  align-self: center;
+  height: max-content;
+  width: max-content;
+  cursor: pointer;
+}
+
+.lines {
+  display: inline-block;
+  width: 2.1rem;
+  height: 0.3rem;
+  background: black;
+  border-radius: 2px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.lines::before {
+  top: -1.44rem;
+  display: inline-block;
+  width: 2.1rem;
+  height: 0.3rem;
+  background: black;
+  border-radius: 2px;
+  transition: 0.3s;
+  position: relative;
+  content: '';
+  transform-origin: 0.15rem center;
+}
+
+.lines::after {
+  top: -1.44rem;
+  display: inline-block;
+  width: 2.1rem;
+  height: 0.3rem;
+  background: black;
+  border-radius: 2px;
+  transition: 0.3s;
+  position: relative;
+  content: '';
+  transform-origin: 0.15rem center;
+}

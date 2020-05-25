@@ -6,3 +6,8 @@ export interface Work {
   srcIcon: string,
   screenshots: string[]
 }
+
+export interface Contacts {
+  title: string,
+  url: string
+}
