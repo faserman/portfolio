@@ -8,8 +8,6 @@ class AppStore {
   @observable idWork: string = '';
   @observable workDrawerIsOpen: boolean = false;
   @observable scroll: number = 0;
-  @observable screenWidth: number = 1900;
-  @observable navMenuToggle: boolean = false;
 
   @action
   setWorks(result: Work[]) {
@@ -29,16 +27,6 @@ class AppStore {
   @action
   setScroll(result: number) {
     this.scroll = result;
-  };
-
-  @action
-  setScreenWidth(result: number) {
-    this.screenWidth = result;
-  };
-
-  @action.bound
-  openBtnsMenu() {
-    this.navMenuToggle = !this.navMenuToggle;
   };
 
   @action

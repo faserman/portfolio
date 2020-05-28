@@ -15,9 +15,6 @@ class App extends React.Component {
     window.addEventListener('scroll', function() {
       appStore.setScroll(window.scrollY);
     });
-    window.addEventListener('resize', function() {
-      appStore.setScreenWidth(window.innerWidth);
-    });
     appStore.gettingWorks();
     appStore.gettingContacts();
 

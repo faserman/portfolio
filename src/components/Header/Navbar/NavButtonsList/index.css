@@ -1,15 +1,7 @@
 .nav {
   display: grid;
   --gap: 15px;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-      min(
-        (19rem - 100%) * 999,
-        100%),
-      1fr
-    )
-  );
+  grid-template-columns: repeat(3, max-content);
   gap: var(--gap);
   justify-content: space-around;
 

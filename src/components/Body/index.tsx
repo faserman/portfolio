@@ -5,6 +5,7 @@ import { appStore } from '../../store/app';
 
 import { WorksList } from './WorksList';
 import { WorkDrawer } from './WorkDrawer';
+import { About } from './About';
 
 export const Body =observer((props: any) => {
   
@@ -14,6 +15,7 @@ export const Body =observer((props: any) => {
     <div className="body">
       <WorksList />
       { workDrawerIsOpen ? <WorkDrawer /> : null }
+      <About />
     </div>
   )
 })
