@@ -14,6 +14,7 @@ class App extends React.Component {
 
     window.addEventListener('scroll', function() {
       appStore.setScroll(window.scrollY);
+      console.log(window.scrollY);
     });
     appStore.gettingWorks();
     appStore.gettingContacts();

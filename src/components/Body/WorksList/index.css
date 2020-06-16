@@ -11,3 +11,17 @@
   justify-content: center;
   gap: 15px;
 }
+
+.works-list-mini {
+  display: grid;
+  width: max-content;
+  position: sticky;
+  top: 90px;
+}
+
+.works-list-items-mini {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 50px), 1fr));
+  justify-content: center;
+  gap: 5px;
+}

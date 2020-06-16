@@ -33,3 +33,23 @@
   color: #92A0B8;
 }
 
+.work-item-mini {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60px;
+  grid-template-rows: repeat(2, auto);
+  height: 150px;
+  cursor: pointer;
+
+  transition: box-shadow .2s linear;
+}
+
+.work-item-mini:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.img-work-item-mini {
+  width: 60px;
+  height: 120px;
+  margin: 0 auto;
+}

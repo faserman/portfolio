@@ -72,6 +72,15 @@ class Utils {
     return urlTool
   }
 
+  miniStyles = (scroll: number, workDrawerIsOpen: boolean) => {
+    let result: string = "";
+    if(workDrawerIsOpen && scroll > 170) {
+      result = "-mini"
+    } else {
+      result = ""
+    };
+    return result;
+  }
   
 }
 
